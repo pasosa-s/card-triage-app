@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue-nav: #262e3c;
+  --color-blue-text: #262e4e;
+  --color-blue-light: #67c6d9;
+  --color-turquoise: #00c8b9;
+  --color-orange: #ff8900;
+  --color-yellow: #ffb401;
+  --color-marble: #f0f1f2;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+
+.app-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+}
+
+.nav-bar {
+  background-color: var(--color-blue-nav);
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-right: 25px;
+}
+
+.nav-bar__radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar__radio-container p {
+  color: var(--color-marble);
+  margin-left: 5px;
+}
+
+.nav-bar__radio-container label {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar__text-input {
+  margin-left: 15px;
+}
+
+.main-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 25px;
+}
+
+.board {
+  background-color: var(--color-marble);
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 15px;
+  padding-bottom: 100px;
+
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.board__title {
+  color: var(--color-blue-var);
+}
+
+.card {
+  background-color: #fff;
+  width: 100%;
+
+  cursor: pointer;
+  padding: 15px 25px;
+  margin-top: 15px;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card__patient-name {
+  color: var(--color-orange);
+  padding-bottom: 10px;
+}
+
+.card__patient-name:hover {
+  color: var(--color-yellow);
+}
+
+.card__arrhythmias-list {
+  margin-left: 25px;
+}
+
+.card__arrhythmias-title {
+  color: var(--color-blue-text);
+  margin-bottom: 10px;
+}
+
+.card__arrhythmias-title:hover {
+  color: var(--color-turquoise);
+}
+
+.card__sub-title {
+  color: #777;
+}
+
+.card__status-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.card__status {
+  margin-left: 10px;
+}
+
+.card div {
+  border-bottom: 2px solid #ccc;
+}
