@@ -22,7 +22,7 @@ const App = () =>{
 
   const filteredPatientList = () => {
     if(!filterInput.trim()) return patients;
-    const lowerFilterInput = filterInput.toLowerCase();
+    const lowerFilterInput = filterInput.trim().toLowerCase();
     const newPatientsList = patients.filter(patient => {
       if(filterBy === "name") {
         return patient.patient_name.toLowerCase().includes(lowerFilterInput);

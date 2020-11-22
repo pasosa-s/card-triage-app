@@ -24,6 +24,8 @@ const Card = (props) => {
         return style;
     };
 
+    const arrhythmiasList = props.arrhythmias.map(arr => <li key={arr}>{arr}</li>)
+
     return (
         <div 
             className="card"
@@ -38,7 +40,7 @@ const Card = (props) => {
             </div>
             <br/>
             <h3 className="card__arrhythmias-title">Arrhythmias</h3>
-            <ul className="card__arrhythmias-list">{props.arrhythmias.map(arr => <li>{arr}</li>)}</ul>
+            <ul className="card__arrhythmias-list">{arrhythmiasList}</ul>
             <br/>
             <div className="card__status-container">
                 <p className="card__sub-title">status: </p>
